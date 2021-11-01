@@ -8,8 +8,8 @@ function App() {
 
  useEffect(()=>{
    setInterval(()=>{
-    const date=new Date()
-         setClock(date.toLocaleTimeString('fr-FR'))
+    const date=new Date();
+         setClock(date.toLocaleTimeString().split(/PM|AM/))
    },1000)
  },[])
 
